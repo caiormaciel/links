@@ -118,6 +118,7 @@ body {
     height: 32px;
     border: 0;
     border-radius: 50%;
+    
 
 
     position: absolute;
@@ -125,13 +126,21 @@ body {
     z-index: 1;
     /*ALINHAMENTO CENTRAL*/
     transform: translateY(-50%);
-    top: 50%
+    top: 50%;
+
+    animation: voltar .4s;
+
+    transition: outline 0.2s;
+
+}
+
+.switch button:hover {
+    outline: 8px solid var(--highlight-color);
 
 }
 
 .light-mode .switch button {
-    right: 0;
-    left: initial;
+    animation: deslizar .4s forwards;
 }
 
 /*------------------------------------------------------------*/
@@ -231,5 +240,23 @@ footer a {
 
     .light-mode {
         --bg-url: url(assets/assets/bg-desktop-light.jpg);
+    }
+}
+
+@keyframes deslizar {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes voltar {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
