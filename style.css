@@ -12,6 +12,7 @@ body {
     background-size: cover;
     */
     background: var(--bg-url) no-repeat top center / cover;
+    height: 100vh; /* 100% viewport height*/
     font-family: 'Inter', sans-serif;
 }
 
@@ -219,4 +220,16 @@ footer {
 
 footer a {
     color: var(--text-color)
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(assets/assets/bg-desktop.jpg);
+    }
+
+    .light-mode {
+        --bg-url: url(assets/assets/bg-desktop-light.jpg);
+    }
 }
