@@ -9,13 +9,13 @@ function toggleMode() {
     //substituição da imagem
     if(html.classList.contains("light-mode")){
        //se tiver light-mode, adicionar a imagem light
-       image.setAttribute("src", "assets/assets/avatar-light.png")
+       image.setAttribute("src", "assets/caiomaciel2f.jpg")
        image.setAttribute("alt", "foto de óculos escuro")
     }
     else {
         //se tiver sem light-mode, adicionar a imagem dark
-       image.setAttribute("src", "assets/assets/avatar.png")
-        image.setAttribute("alt", "foto de óculos")
+       image.setAttribute("src", "assets/caiomacielf.jpg")
+        image.setAttribute("alt", "Foto no computador")
     }
 
 
